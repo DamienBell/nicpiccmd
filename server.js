@@ -3,7 +3,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var hbs = require('express-hbs');
-
+var Kaiseki = require('kaiseki');
+var kaiseki = new Kaiseki(process.env.APP_ID,process.env.REST_KEY);
 var routes = require('./server.routes');
 
 var app = express();
